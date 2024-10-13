@@ -20,8 +20,9 @@ let newDate = new Date()
 // console.log(newDate.getMonth());
 
 newDate.toLocaleString('default',{
-    weekday:"long",
-    timeZone:''
+    weekday:"long"
 })
+ console.log(newDate);
+ 
 
 
