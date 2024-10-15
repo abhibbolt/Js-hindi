@@ -50,3 +50,19 @@ const addtwo1 = (num1, num2) => (num1 + num2)
 console.log(addtwo1(1, 1));
 
 
+// iife(immediately invoked function expression)
+
+// function chai(){
+//     console.log(`db connected`);
+    
+// }()// showing error so we use ()
+
+(function chai() {
+    console.log(`db connected`);
+
+}) ();// it show error
+
+    ( () => {
+        console.log(`db connected`);
+
+    })()
