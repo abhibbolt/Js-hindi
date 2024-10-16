@@ -1,0 +1,42 @@
+Javascript execution context
+
+{}=>global EC
+global execution context 
+function execution context 
+evalution execution context
+
+{}=> memory creation phase 
+     execution phase
+exmple =>
+         let val1 = 10 
+         let val2 = 5
+         function addnum(num1,num2){ 
+            let total=num1+num2
+            return total 
+         }
+         let result = addnum(val1,val2) 
+         let result2 = addnum(10,2)
+
+         1.phase global execution
+         2.phase memory phase 
+          val1->undefined
+          val2->undefined
+          addnum->definition
+          result1->undefined
+          result2->undefined
+        3.phase execution phase
+          val1<-- 10
+          val2<-- 5
+          addnum=>[new variable environment + execution thread]->
+                   1.memory phase
+                     val1-> undefined
+                     val2-> undefined
+                     total-> undefined
+                  2.execution context 
+                    num1<--10
+                    num2<--5
+                    total<-- 15----------> it return in global execution context
+
+                    for resul2 we get new environment variable + thread box
+                      repeat addnum 
+
