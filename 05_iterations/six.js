@@ -16,15 +16,38 @@ const coding = ['cpp', 'js', 'java', 'react', 'basic']
 // console.log(newnum);
 
 
-const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-const newNums = []
-myNum.forEach((num)=>{
-    if(num>4){
-        newNums.push(num)
-    }
-})
+// const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const newNums = []
+// myNum.forEach((num)=>{
+//     if(num>4){
+//         newNums.push(num)
+//     }
+// })
 
-console.log(newNums);
+// console.log(newNums);
+
+const books = [
+    {
+        title: "The Lord of the Rings",
+        author: "J.R.R. Tolkien",
+        genre: "Fantasy"
+    },
+    {
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        genre: "Fiction"
+    },
+    {
+        title: "The Hitchhiker's Guide to the Galaxy",
+        author: "Douglas Adams",
+        genre: "Science Fiction"
+    }
+];
+
+const userbook = books.filter((ge) => ge.genre === 'Fiction')
+
+console.log(userbook);
+
 
 
 
