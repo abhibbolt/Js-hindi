@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+
+<body style="background-color: black; color: aliceblue;">
+    <h2>Events in JS</h2>
+    <ul id="image">
+        <button id="animal">animal</button><br>
+    <button id="owl">Owl</button>
+    </ul>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl here")// use event listener beacose it give more feature
+    // }
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("again owl")
+    //   })
+
+    // document.getElementById('image').addEventListener('click', function (e) {
+    //     console.log("click inside the url");
+        
+    // },true)// bubble event
+
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //         console.log("click in owl");
+    //         e.stopImmediatePropagation()
+
+       // }, true)
+
+    // type , timestamp , defalutPrevented , 
+    // target  , toElement , srcElement , currentTarget,  // to study self
+    // clientx , clinty , screenX , screeny
+    // altkey , ctrlkey , shiftkey  , keycode
+
+       document.querySelector('#image').addEventListener
+       ('click',function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIT.remove()
+       
+        
+       })
+
+
+</script>
+
+</html>
